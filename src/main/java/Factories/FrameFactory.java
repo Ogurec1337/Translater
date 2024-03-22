@@ -25,9 +25,9 @@ public class FrameFactory {
 
         frame.setLocationRelativeTo(null);
         frame.setLayout(null);
-        frame.setVisible(true);
+
+
         return frame;
-
-
     }
+
 }
