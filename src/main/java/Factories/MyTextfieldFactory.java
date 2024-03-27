@@ -14,7 +14,7 @@ public class MyTextfieldFactory {
 
         switch(type){
             case MAIN_FRAME_FIELD:
-                Point point = new Point(
+                Point point1 = new Point(
                     (int) (Properties.MAIN_FRAME_DIMENSION.getWidth()/2-MAIN_DIMENSION.getWidth()/2-5),
                     (int) (2*Properties.MAIN_FRAME_DIMENSION.getHeight()/3)
                 );
@@ -24,7 +24,19 @@ public class MyTextfieldFactory {
                 field.setForeground(Properties.SECOND_COLOR);
                 field.setFont(Properties.MAIN_FONT);
                 field.setSize(MAIN_DIMENSION);
-                field.setLocation(point);
+                field.setLocation(point1);
+                break;
+
+            case ADD_FRAME_FIELD:
+                Point point2 = new Point(
+                        (int) (Properties.ADD_FRAME_DIMENSION.getWidth()/2-MAIN_DIMENSION.getWidth()/2-5), 20);
+
+                field.setBackground(Properties.SECOND_COLOR);
+                field.setBorder(BorderFactory.createLineBorder(Properties.MAIN_COLOR,2));
+                field.setForeground(Properties.MAIN_COLOR);
+                field.setFont(Properties.MAIN_FONT);
+                field.setSize(MAIN_DIMENSION);
+                field.setLocation(point2);
                 break;
 
         }

@@ -1,3 +1,3 @@
 package Types;
 
-public enum ButtonType {ADD_BUTTON}
+public enum ButtonType {ADD_BUTTON,CONFIRM_BUTTON}

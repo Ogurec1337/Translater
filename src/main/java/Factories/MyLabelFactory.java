@@ -12,9 +12,9 @@ public class MyLabelFactory {
             (int) (Properties.MAIN_FRAME_DIMENSION.getWidth()/2 - MAIN_FRAME_LABEL_DIMENSION.getWidth()/2-3),
             (int) (Properties.MAIN_FRAME_DIMENSION.getHeight()/4));
     private MyLabelFactory(){}
-    public static JLabel build(LabelType type){
+    public static JLabel build(LabelType type) {
         JLabel label = new JLabel();
-        switch(type) {
+        switch (type) {
             case MAIN_FRAME_TYPE:
                 label.setSize(MAIN_FRAME_LABEL_DIMENSION);
                 label.setBackground(Properties.SECOND_COLOR);

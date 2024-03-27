@@ -15,7 +15,7 @@ public class AddButtonActionListener implements ActionListener {
 
     @Override
     public void actionPerformed(ActionEvent e) {
-        if(e.getSource() == button){
+        if(e.getSource() == button && button.getText() == "+"){
             JFrame frame = FrameFactory.build(FrameType.ADD_FRAME);
             frame.setVisible(true);
         }
