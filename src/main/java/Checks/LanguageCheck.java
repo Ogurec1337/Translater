@@ -12,7 +12,7 @@ public class LanguageCheck {
         if(expectedLanguage == Language.NONE)
             return Language.NONE;
         for(char symbol:massiv){
-            if(charCheck(symbol) != expectedLanguage && symbol != ' ')
+            if(charCheck(symbol) != expectedLanguage && symbol != ' '  && symbol != '/')
                 flag = false;
         }
         return flag?expectedLanguage:expectedLanguage== Language.ENGLISH? Language.RUSSIAN: Language.ENGLISH;
